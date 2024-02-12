@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #CBE6EF;
+}
+
+
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.header_text {
+    font-family: 'Marker Felt';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #80c3d8;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.big_yes{
+    background-color: #80c3d8;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    left: 48%;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
